@@ -1,242 +1,191 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/github_username/repo_name">
-<!--     <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
-  </a>
-
-<h3 align="center">project_title</h3>
-
-  <p align="center">
-    project_description
+<div align="left">
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="images/ReFormBeautyDarkLogo.png">
+ <source media="(prefers-color-scheme: light)" srcset="images/ReFormBeautyLightLogo.png">
+ <img alt="YOUR-ALT-TEXT" src="images/ReFormBeautyDarkLogo.png">
+</picture>
+  <br />
+  <br />
+  <h2>Make Beauty Safe. ReForm it.</h2>
+  <p>
+  <p align="left">The beauty industry exists to enhance the way people look. To make them more attractive and help them feel great about themselves.</p>
+    <p align="left">Professional therapists are skilled in treatments which are frequently complex to administer.
+    But in the wrong hands, they can also be dangerous or even life-threatening.</p>
+    <p align="left">We created ReFormBeauty app to make the industry safer for both customers and professional practitioners.</p>
+    <p align="left">And even better, we make the experience of consultations more efficient and relevant for all.</p>
     <br />
-    <a href="https://github.com/billlanyon/ReFormBeauty"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/billlanyon/ReFormBeauty">View Demo</a>
-    ·
-    <a href="https://github.com/billlanyon/ReFormBeauty/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/billlanyon/ReFormBeauty/issues">Request Feature</a>
   </p>
 </div>
 
+# About The Project
 
+> A person having a non-surgical cosmetic intervention has no more protection and redress than someone buying a ballpoint pen or a toothbrush. **_Professor Sir Bruce Keogh_**
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+## Core team of three
 
+- Subject Matter Expert: Alice Kent is a professional beauty therapist.
+- Technology: Bill Lanyon is Economist by training, technologist by inclination and Agile by experience.
+- Operations: Nigel Kent is an experienced owner and manager of UK and USA businesses.
 
+## ReFormBeauty app
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+- **Securely captures** medical profile from the customer; profile and qualification information from the therapist; insurance and licensing information from the provider.
+- **Flightchecks** when a customer selects a treatment, verifies that the treatment is safe for them and the therapist they choose is genuine and qualified.
+- **Handshakes** at the point of treatment creating a standard contract for the course of treatment and consistent treatment record for insurance purposes.
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+## Project built with:
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+- ![javascript.shield]
+- ![react.shield]
+- ![mongodb.shield]
+- ![remix.shield]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+# Design Decisons
 
+## Progressive Web App (PWA): optimise distribution
 
+- Native app advantages: faster than web apps; can access system & device resources; can work without an internet connection; have more safety and security with App Store approval; user engagement time; findability on app stores.
+- Native app limitations: not auto updating; design, build, maintenance and update for two platforms is more expensive; apps have to be approved by the App Stores; Apple and Google charges; Reach of web today.
+- PWA advantages: cross platform compatible; cost and effort effective:; works with low network bandwidth; auto updates; no dependency for distributing apps; many native app features; https security; consume less disk space.
+- PWA limitations: difficult to optimize device resources; hard to work with device-specific features; limited functionality support.
+- Conclusion: PWA
 
-### Built With
+## Single Page App (SPA): React.js with server-side rendering to optimise mobile experience
 
-* [![React][React.js]][React-url]
-* [![Remix][Remix.js]][Remix-url]
-* [![MongoDB][MongoDB.com]][MongoDB-url]
+- A Facebook open source project with a strong community, helping future-proof our code. Netflix and Airbnb are examples of React.js
+- Component logic is written in JavaScript and JSX instead of templates with faster SPA performance than Angular or Vue.js
+- Declarative views make code more predictable, easier to debug and more maintainable.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Database: NoSQL MongoDB
 
+- With NoSQL we can flexibly optimise our DB structure to make the queries as efficient as possible.
+- Data which is frequently queried together is typically stored together, to avoid having to JOIN data. Some data duplication is OK if the data is not going to change often, but nested data that could grow infinitely (eg. reviews) has to be avoided.
+- Precompute health profiles at against treatment type to prepare boolean gating data by treatment. This permits offering ‘Because of your condition X, you can’t have this treatment, but you could still have this one' advice.
+- Single lookup of all profile data, by embedding to avoid the expense of JOINs or $lookup?s
+- Optimisation based on: frequency, size, integrity, maximum latency, execution time and 6 year retention life.
+- Rough Entity Relationship Diagram (ERD):
+  ![erd]
 
+## Web Security: apply the AWS Zero Trust Model
 
-<!-- GETTING STARTED -->
-## Getting Started
+- Always prioritise escaping all incoming user input content to treat it as raw text.
+- Ensure each agent only has the minimal permissions necessary.
+- Encrypt our data everywhere, both in transit and at rest.
+- Minimise the attack surface to our virtual private cloud.
+- Use application load balancer to handle all internet-facing traffic.
+- Make sure all internal services are cut off from direct public internet access.
+- Apply a web application firewall to further restrict traffic into our network.
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+## Serverless Architecture: performance needs vs. costs
 
-### Prerequisites
+- Lower costs: on-demand scaling and no idle capacity cost.
+- More Agile: high availability and faster innovation.
+- Focus on our code: no server management overhead.
+
+## Framework: Remix
+
+- Remix is a seamless server and browser runtime that provides fast page loads and instant transitions by leveraging distributed systems and native browser features instead of clunky static builds.
+- Built on the Web Fetch API (instead of Node) it can run anywhere. It already runs natively on Cloudflare Workers, and supports both serverless and traditional Node.js environments.
+- Most web apps fetch inside components, creating request waterfalls, slower loads, and unsatisfactory UX.
+- Using nested routes, Remix can eliminate nearly every loading state, by loading data in parallel on the server and sending a fully formed HTML document.
+- Remix runs the action server side, revalidates data client side, and even handles race conditions from resubmissions.
+
+## Production Stack?
+
+- AWS, dynamodb, github actions, auth, tailwind, cypress, vitest, testing library, prettier, eslint, typescript?
+- Deployed to a serverless function running Node.js with DynamoDB for persistance.
+
+# Scope
+
+- Order of battle: tracer bullets, proof of concept (POC), therapist prototype, customer prototype, minimum viable product (MVP).
+- We have gathered requirements into around 100 user stories that are blueprints for development.
+- Tracer bullet code will answer questions that came out of the planning process, hitting all of the major components (user interface, authorisation, business logic and database), to see how things may work in practice.
+- Tracer bullets are timeboxed to take from one to five days, check that all the components work together and immediately pivot when they don’t.
+- POC scope is defined as the minimum set of user requirements to demonstrate the system from end to end.
+
+## Roadmap
+
+- 000 Therapist Profile: As a Therapist I want to create my secure user access, accept T&Cs, manage my password and preferred communications settings, so that I can access the app securely.
+- 001 Therapist Profile: As a Therapist I want to populate my Therapist profile page details: contact details, work address, remote service: so that I can be identified and contacted.
+- 002 Therapist Profile: As a Therapist I want to be able to enter and share my covid-19 test and vaccination status, so that I can show my ability to operate during the pandemic.
+- 003 Therapist Profile: As a Therapist I want to select the Provider(s) I am working for, so that I can apply the Provider’s contract, insurance and ownership of CustomerTreatmentRecord to the treatments I perform for the Provider as a TherapistAgent.
+- 004 Therapist Profile: As a Therapist I want to search for amd select my educational and manufacturer Therapist qualifications, so that I can share the specific treatments I am qualified to provide.
+- 005 Therapist Profile: As a Therapist I want to search for and select the ReFormBeauty treatments I am qualified to provide, so that I can share my ReFormBeauty secured services accurately.
+- 006...
+
+<!--
+
+See the [open issues](https://github.com/billlanyon/ReFormBeauty/issues) for a full list of proposed features (and known issues). -->
+
+<!-- GETTING STARTED
+
+# Getting Started
+
+To get a local copy up and running follow these simple example steps:
+
+## Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+
+- npm
   ```sh
   npm install npm@latest -g
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/billlanyon/ReFormBeauty.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+-->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- USAGE EXAMPLES
 
+# Usage
 
+Use this space to show useful examples of how a project can be used. -->
 
-<!-- USAGE EXAMPLES -->
-## Usage
+# Contact
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Bill Lanyon: billlanyon@me.com
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Project Link: [https://github.com/billlanyon/ReFormBeauty](https://github.com/billlanyon/ReFormBeauty)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Web site: [ReFormBeauty](https://ReFormBeauty.org)
 
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/billlanyon/ReFormBeauty.svg?style=for-the-badge
+[contributors-url]: https://github.com/billlanyon/ReFormBeauty/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/billlanyon/ReFormBeauty.svg?style=for-the-badge
+[forks-url]: https://github.com/billlanyon/ReFormBeauty/network/members
+[stars-shield]: https://img.shields.io/github/stars/billlanyon/ReFormBeauty.svg?style=for-the-badge
+[stars-url]: https://github.com/billlanyon/ReFormBeauty/stargazers
+[issues-shield]: https://img.shields.io/github/issues/billlanyon/ReFormBeauty.svg?style=for-the-badge
+[issues-url]: https://github.com/billlanyon/ReFormBeauty/issues
+[license-shield]: https://img.shields.io/github/license/billlanyon/ReFormBeauty.svg?style=for-the-badge
+[license-url]: https://github.com/billlanyon/ReFormBeauty/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/billlanyon
+[aws-architecture]: images/ArchitectureAWS.png
+[erd]: images/ERDRough.png
 [product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[react.shield]: https://img.shields.io/badge/React-blue?logo=react
+[mongodb.shield]: https://img.shields.io/badge/MongoDB-blue?logo=mongodb
+[javascript.shield]: https://img.shields.io/badge/JavaScript-blue?logo=javascript
+[remix.shield]: https://img.shields.io/badge/Remix-blue?logo=remix
+[reformbeauty]: https://ReFormBeauty.org
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
