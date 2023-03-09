@@ -69,9 +69,10 @@
 
 - With NoSQL we can flexibly optimise our DB structure to make the queries as efficient as possible.
 - Data which is frequently queried together is typically stored together, to avoid having to JOIN data. Some data duplication is OK if the data is not going to change often, but nested data that could grow infinitely (eg. reviews) has to be avoided.
-- Precompute health profiles at against treatment type to prepare boolean gating data by treatment. This permits offering ‘Because of your condition X, you can’t have this treatment, but you could still have this one' advice.
+- The scale-out architecture of NoSQL systems provides a clear path to scalability when data volume or traffic grows.
+- We will precompute health profiles at against treatment type to prepare boolean gating data by treatment.
 - Single lookup of all profile data, by embedding to avoid the expense of JOINs or $lookup?s
-- Optimisation based on: frequency, size, integrity, maximum latency, execution time and 6 year retention life.
+- We will optimise based on: frequency, size, integrity, maximum latency, execution time and 6 year retention life.
 - Rough Entity Relationship Diagram (ERD):
   ![erd]
 
