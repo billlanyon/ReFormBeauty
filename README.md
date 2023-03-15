@@ -68,7 +68,7 @@
 ## CSS: Tailwind utility framework
 - Vanilla css: Pros are full control, no unnecessaary code, class name freedom; Cons are build everything from scratch, danger of bad code.
 - Component frameworks (eg. Bootstrap): Pros are: fast development, follow best practices, no need for expertise; Cons are: little or no control, unnecessary overhead code, "All websites risk to look the same".
-- Utility frameworks: pros are faster development, follow best practice, less need for expertise; Cons are little control, necessary overhead code 
+- Utility frameworks: Pros are faster development, follow best practice, less need for expertise; Cons are little control, necessary overhead code 
 
 ## Database: NoSQL MongoDB
 
