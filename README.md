@@ -65,6 +65,11 @@
 - Component logic is written in JavaScript and JSX instead of templates with faster SPA performance than Angular or Vue.js
 - Declarative views make code more predictable, easier to debug and more maintainable.
 
+## CSS: Tailwind utility framework
+- Vanilla css: Pros are full control, no unnecessaary code, class name freedom; Cons are build everything from scratch, danger of bad code.
+- Component frameworks (eg. Bootstrap): Pros are: fast development, follow best practices, no need for expertise; Cons are: little or no control, unnecessary overhead code, "All websites risk to look the same".
+- Utility frameworks: pros are faster development, follow best practice, less need for expertise; Cons are little control, necessary overhead code 
+
 ## Database: NoSQL MongoDB
 
 - With NoSQL we can flexibly optimise our DB structure to make the queries as efficient as possible.
