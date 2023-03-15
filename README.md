@@ -48,6 +48,7 @@
 - ![react.shield]
 - ![mongodb.shield]
 - ![remix.shield]
+- ![prisma.shield]
 
 # Design Decisons
 
@@ -77,7 +78,8 @@
 - The scale-out architecture of NoSQL systems provides a clear path to scalability when data volume or traffic grows.
 - We will precompute health profiles at against treatment type to prepare boolean gating data by treatment.
 - Single lookup of all profile data, by embedding to avoid the expense of JOINs or $lookup?s
-- We will optimise based on: frequency, size, integrity, maximum latency, execution time and 6 year retention life.
+- Optimise wil be based on: frequency, size, integrity, maximum latency, execution time and 6 year retention life.
+- We will use the Prisma object relational mapping (ORM) bridge to a local MongoDB testing database for development.
 - Rough Entity Relationship Diagram (ERD):
   ![erd]
 
@@ -189,6 +191,7 @@ Web site: [ReFormBeauty](https://ReFormBeauty.org)
 [erd]: images/ERDRough.png
 [product-screenshot]: images/screenshot.png
 [react.shield]: https://img.shields.io/badge/React-blue?logo=react
+[prisma.shield]: https://img.shields.io/badge/Prisma-blue?logo=prisma
 [mongodb.shield]: https://img.shields.io/badge/MongoDB-blue?logo=mongodb
 [javascript.shield]: https://img.shields.io/badge/JavaScript-blue?logo=javascript
 [remix.shield]: https://img.shields.io/badge/Remix-blue?logo=remix
