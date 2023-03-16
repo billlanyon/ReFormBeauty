@@ -46,9 +46,11 @@
 
 - ![javascript.shield]
 - ![react.shield]
-- ![mongodb.shield]
 - ![remix.shield]
 - ![prisma.shield]
+- ![mongodb.shield]
+
+
 
 # Design Decisons
 
@@ -106,6 +108,23 @@
 - Most web apps fetch inside components, creating request waterfalls, slower loads, and unsatisfactory UX.
 - Using nested routes, Remix can eliminate nearly every loading state, by loading data in parallel on the server and sending a fully formed HTML document.
 - Remix runs the action server side, revalidates data client side, and even handles race conditions from resubmissions.
+
+## Testing: Cypress
+- Test driven Development: Cypress helps set up and start writing tests while you build your application locally.
+- After building a suite of tests and integrating Cypress with a CI Provider: Cypress Cloud can record your test runs.
+- Time Travel: Cypress takes snapshots as your tests run. Hover over commands in the Command Log to see exactly what happened at each step.
+- Automatic Waiting: Never add waits or sleeps to your tests. Cypress automatically waits for commands and assertions before moving on.
+- Spies, Stubs and Clocks: Verify and control the behavior of functions, server responses, or timers.
+- Network Traffic Control: Easily control, stub, and test edge cases without involving servers.
+- Screenshots and Videos: screenshots taken automatically on failure, and videos of entire test suite when run from the CLI.
+- Cross browser Testing: Run tests within Firefox and Chrome-family browsers locally and optimally in a Continuous Integration pipeline.
+
+## CI Provider: GitHub actions
+- Run a workflow on any GitHub event like push, issue creation, or a new release.
+- See workflow run in realtime with color and emoji.
+- Combine and configure actions for the services we use, built and maintained by the community.
+- Pair GitHub Packages with Actions to simplify package management, including version updates, CDN distribution and dependency resolution.
+
 
 ## Production Stack?
 
@@ -190,11 +209,13 @@ Web site: [ReFormBeauty](https://ReFormBeauty.org)
 [aws-architecture]: images/ArchitectureAWS.png
 [erd]: images/ERDRough.png
 [product-screenshot]: images/screenshot.png
+[javascript.shield]: https://img.shields.io/badge/JavaScript-blue?logo=javascript
 [react.shield]: https://img.shields.io/badge/React-blue?logo=react
+[remix.shield]: https://img.shields.io/badge/Remix-blue?logo=remix
 [prisma.shield]: https://img.shields.io/badge/Prisma-blue?logo=prisma
 [mongodb.shield]: https://img.shields.io/badge/MongoDB-blue?logo=mongodb
-[javascript.shield]: https://img.shields.io/badge/JavaScript-blue?logo=javascript
-[remix.shield]: https://img.shields.io/badge/Remix-blue?logo=remix
+[cypress.shield]: https://img.shields.io/badge/Cypress-blue?logo=cypress
+[githubactions.shield]: https://img.shields.io/badge/Githubactionss-blue?logo=githubactions
 [reformbeauty]: https://ReFormBeauty.org
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
