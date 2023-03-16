@@ -49,8 +49,8 @@
 - ![remix.shield]
 - ![prisma.shield]
 - ![mongodb.shield]
-
-
+- ![cypress.shield]
+- ![githubactions.shield]
 
 # Design Decisons
 
@@ -215,7 +215,7 @@ Web site: [ReFormBeauty](https://ReFormBeauty.org)
 [prisma.shield]: https://img.shields.io/badge/Prisma-blue?logo=prisma
 [mongodb.shield]: https://img.shields.io/badge/MongoDB-blue?logo=mongodb
 [cypress.shield]: https://img.shields.io/badge/Cypress-blue?logo=cypress
-[githubactions.shield]: https://img.shields.io/badge/Githubactionss-blue?logo=githubactions
+[githubactions.shield]: https://img.shields.io/badge/Githubactions-blue?logo=githubactions
 [reformbeauty]: https://ReFormBeauty.org
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
