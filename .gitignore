@@ -1,0 +1,12 @@
+.DS_Store
+
+### Remix ###
+node_modules
+/.cache
+/build
+/public/build
+.env
+.env.test
+
+### Visual Studio Code ###
+.eslintrc.js
